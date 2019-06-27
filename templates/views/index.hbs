@@ -16,18 +16,19 @@
 
 <body>
     {{>header}}
+    <p id="w">Use this site to get your location's Weather!!!</p>
     <div class="container">
         <div class="row">
-            <div class="col-8">
-                <p id="w">Use this site to get your location's Weather!!!</p>
-    <form>
-        <input placeholder="location">
-        <button>Search</button>
-    </form>
-        <p id="m"></p>
-        <p id="y"></p>
+             <div class="col-offset-xs-1"></div>
+            <div class="col-xs-10">
+                       <form>
+                            <input placeholder="location">
+                            <button>Search</button>
+                        </form>
+                    <p id="m"></p>
+                     <p id="y"></p>
         </div>
-    </div>
+        </div>
     </div>
 </body>
 {{>footer}}
