@@ -57,7 +57,7 @@ app.get('/about',(req,res)=>{
 })
 app.get('/help',(req,res)=>{
         res.render('help',{
-          msg:'Pls help me',
+          msg:'underconstruction',
           title:'HELP',
           name:'Poonam kumari'
          })

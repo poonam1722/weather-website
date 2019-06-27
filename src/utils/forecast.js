@@ -9,7 +9,7 @@ const forecast=(x,y,callback)=>{
             callback('problem in service',)
         }
         else{
-            callback(undefined, `${body.daily.data[0].summary} It is currently ${body.currently.temperature} degrees out. There is a ${body.currently.precipIntensity} chance of rain. Humidity is ${body.daily.data[0].humidity} .`)
+            callback(undefined, `${body.daily.data[0].summary} It is currently ${body.currently.temperature} degrees out. There is a ${body.currently.precipIntensity} chance of rain. Humidity is ${body.daily.data[0].humidity}. Maxtemp:${body.daily.data[0].temperatureHigh}, Mintemp: ${body.daily.data[0].temperatureLow} .` )
         }
     })
 }

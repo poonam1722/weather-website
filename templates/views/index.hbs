@@ -22,13 +22,18 @@
 
 <body>
     {{>header}}
-    <p id="w">Use this site to get your location's Weather!!!</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <p id="w">Use this site to get your location's Weather!!!</p>
     <form>
         <input placeholder="location">
         <button>Search</button>
     </form>
-    <p id="m"></p>
-    <p id="y"></p>
+        <p id="m"></p>
+        <p id="y"></p>
+        </div>
+    </div>
 </body>
 {{>footer}}
 <script src="js/app.js"></script>
