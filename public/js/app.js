@@ -14,7 +14,7 @@ wform.addEventListener('submit',(e)=>{
     e.preventDefault()
     const location=search.value
 
-    fetch('http://localhost:3000/weather?address='+location).then((respone) => {
+    fetch('/weather?address='+location).then((respone) => {
         respone.json().then((data) => {
             if (data.error) {
                 messageone.textContent=data.error
